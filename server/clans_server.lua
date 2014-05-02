@@ -78,8 +78,6 @@ function ClanSystem:__init ( )
 	SQL:Execute ( "CREATE TABLE IF NOT EXISTS clans ( name VARCHAR UNIQUE, creator VARCHAR, tag VARCHAR, colour VARCHAR, creationDate VARCHAR, bank INT, type VARCHAR, motd VARCHAR )" )
 	SQL:Execute ( "CREATE TABLE IF NOT EXISTS clan_members ( steamID VARCHAR UNIQUE, clan VARCHAR, name VARCHAR, rank VARCHAR, joinDate VARCHAR )" )
 	SQL:Execute ( "CREATE TABLE IF NOT EXISTS clan_messages ( clan VARCHAR, type VARCHAR, message VARCHAR, date VARCHAR )" )
-	--SQL:Execute ( "ALTER TABLE clans ADD COLUMN motd VARCHAR" )
-	--SQL:Execute ( "ALTER TABLE clan_messages ADD COLUMN date VARCHAR" )
 
 	local query = SQL:Query ( "SELECT * FROM clans" )
 	local result = query:Execute ( )
