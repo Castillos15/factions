@@ -20,4 +20,4 @@ A GUI based faction system with several features, which you can read below.
 
 Screenshot: http://i.imgur.com/SKWHCf7.png
 
-PM GUI: F7
+Key to open faction menu: F7
